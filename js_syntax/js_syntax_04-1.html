@@ -10,6 +10,25 @@
 
       console.log(number[0]);
       console.log(number[4]);
+
+      for (let i = 0; i < number.length; i++) {
+        console.log(number[i]);
+      }
+
+      number[2] = 10;
+      console.log(number[2]);
+
+      // 배열을 변경 오류
+      // number = [6, 7, 8, 9, 10];
+
+      // 배열 변수 전체 출력
+      console.log(number);
+
+      number.push(15);
+
+      for (let i = 0; i < number.length; i++) {
+        console.log(number[i]);
+      }
     </script>
   </head>
   <body></body>

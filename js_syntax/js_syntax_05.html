@@ -6,23 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <script>
-      let a = 'a'; //Global Scope
+      var a = "a"; // Global Scope
 
-      functon print(){
-        let b= 'b' ;//Function Scope
-        for(let i=0; i<10;i++){
-          let c='c'; //Block Scope
-          console.log (a);
-          console.log (b);
-          console.log (c);
-          console.log (d);
+      function print() {
+        var b = "b"; // Function Scope
+
+        for (let i = 0; i < 1; i++) {
+          // i : Block Scope
+          var c = "c"; // Block Scope
         }
       }
-      if(true){
-        let d='d';//Block Scope
 
+      if (true) {
+        var d = "d"; // Block Scope
       }
+
       print();
+
+      console.log(a);
+      // console.log(b);
+      // console.log(c);
+      console.log(d);
     </script>
   </head>
   <body></body>
