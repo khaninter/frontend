@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      let a = 'a'; //Global Scope
+
+      functon print(){
+        let b= 'b' ;//Function Scope
+        for(let i=0; i<10;i++){
+          let c='c'; //Block Scope
+          console.log (a);
+          console.log (b);
+          console.log (c);
+          console.log (d);
+        }
+      }
+      if(true){
+        let d='d';//Block Scope
+
+      }
+      print();
+    </script>
+  </head>
+  <body></body>
+</html>
